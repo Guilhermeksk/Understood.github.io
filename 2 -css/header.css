@@ -1,0 +1,115 @@
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background:#6200ffd2;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    height: 9vh;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 90px;
+}
+
+header .logo{
+    font-size: 4rem;
+    font-weight: 600;
+    color:white;
+}
+
+header .logo span{
+    color:white;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 2rem;
+    color:white;
+    transition: 0.5s;
+}
+
+header .navbar a img{
+    width: 35px;
+    position: relative;
+    top: 10px;
+}
+
+header .navbar a#entrar{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #fff;
+    color:rgb(76, 0, 255);
+    transition: 0.5s;
+}
+
+header .navbar a:last-child:hover{
+    background: none;
+    padding: 0;
+    opacity: 90%;
+    scale: 1.1;
+}
+
+header .navbar a:hover{
+    color:rgb(86, 0, 247);
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:var(--purple);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (max-width:768px){
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left: 0;
+        width:100%;
+        background:#fff;
+        padding:1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar a{
+        display: block;
+        margin:2rem 0;
+        font-size: 2rem;
+    }
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content:'\f00d';
+    }
+}
