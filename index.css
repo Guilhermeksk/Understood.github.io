@@ -71,13 +71,13 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background:url(/img/images/home-bg-img.png) no-repeat;
+    background:url(/img/index-img/home-background.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home .image{
-  background-image: url(/img/fundomacaco.png);
+  background-image: url(/img/index-img/fundomacaco.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,7 +157,7 @@ section{
 }
 
 .about{
-    background:url(/img/images/aboutt-bg.png) no-repeat;
+    background:url(/img/index-img/aboutt-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     padding-bottom: 3rem;
