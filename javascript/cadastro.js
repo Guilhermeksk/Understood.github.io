@@ -1,19 +1,45 @@
 
 // chek de usuario
-const nameField = document.querySelector('input');
+const btn = document.querySelector('#btn-login');
+const btn2 = document.querySelector('#btn-login2');
+const username = document.querySelector('#username');
+const password = document.querySelector('#password');
+const username2 = document.querySelector('#password2');
+const password2 = document.querySelector('#username2');
 
-nameField.addEventListener('input', () => {
-  nameField.setCustomValidity('');
-  nameField.checkValidity();
-    console.log(nameField.checkValidity());
-
-});
-
-nameField.addEventListener('invalid', () => {
-  nameField.setCustomValidity('Please fill in your First Name.');
+// area do usuario
+btn.addEventListener('click', () => {
+  if(username.value == '' || username.value == null || password.value == '' || password.value == null ){
+    username.setCustomValidity('Você não preencheu todos os campos, por favor os preencha!');
+    
+  }else{
+    window.location.href = "/html/home.html"
+  }
+  
+})
+//area de cadastro
+btn2.addEventListener('click', () => {
+  if(username2.value == '' || username2.value == null || password2.value == '' || password2.value == null ){
+    username2.setCustomValidity('Você não preencheu todos os campos, por favor os preencha!');
+  }
 })
 
+username.addEventListener('change', () => {
+  
+})
 
+password.addEventListener('change', () => {
+  
+})
+
+username2.addEventListener('change', () => {
+  
+})
+
+password2.addEventListener('change', () => {
+})
+
+//animação do cadastro
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".container");
