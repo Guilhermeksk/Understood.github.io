@@ -4,8 +4,10 @@ const btn = document.querySelector('#btn-login');
 const btn2 = document.querySelector('#btn-login2');
 const username = document.querySelector('#username');
 const password = document.querySelector('#password');
-const username2 = document.querySelector('#password2');
-const password2 = document.querySelector('#username2');
+const username2 = document.querySelector('#username2');
+const password2 = document.querySelector('#password2');
+const email = document.querySelector('#email');
+
 
 // area do usuario
 btn.addEventListener('click', () => {
@@ -19,9 +21,13 @@ btn.addEventListener('click', () => {
 })
 //area de cadastro
 btn2.addEventListener('click', () => {
-  if(username2.value == '' || username2.value == null || password2.value == '' || password2.value == null ){
+  if(username2.value == '' || username2.value == null || password2.value == '' || password2.value == null ||email.value == ''||email.value == null){
     username2.setCustomValidity('Você não preencheu todos os campos, por favor os preencha!');
   }
+})
+
+email.addEventListener('change', () => {
+  
 })
 
 username.addEventListener('change', () => {
