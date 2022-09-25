@@ -1,3 +1,18 @@
+const ocultar = document.getElementById('btn-div');
+    const container = document.querySelector('.container');
+    ocultar.addEventListener('click', () => {
+
+            if (container.style.display == 'block') {
+                container.style.display = 'none';
+                
+            } else {
+                container.style.display = 'block';
+            }
+        });
+
+
+
+
 window.addEventListener('load', () => {
     let click = 0
     const t = 500

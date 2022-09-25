@@ -5,7 +5,28 @@ body {
 src:  url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
 
 }
+/* botoes de configurações desculpa sou ruim e css entao porfavor dps arruma */
+.iniciar {
+    width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background: #c7c6c6;
+  margin-right: 80%;
+  font-size: 1.3em;
+  margin: 5px;
+  font-weight: 600;
+  color: #3902ff;
+  transition: 0.5s;
 
+    
+}
+
+
+
+
+    
 header{
     position: fixed;
     top:0; left:0;
@@ -78,18 +99,6 @@ header{
     min-height: 50vh;
     color: #fff;
   }
-  
-
-
-
-
-
-
-
-
-
-
-
 
 .mensaje a {
     color: inherit;
@@ -106,7 +115,6 @@ html {
     text-size-adjust: 100%;
     line-height: 1.4;
 }
-
 
 * {
     margin: 0;
@@ -199,7 +207,7 @@ html {
     font-size: 0.95em;
 }
 
-.seccion-perfil-usuario .perfil-usuario-footer,
+.seccion-perfil-usuario .config-geral,
 .seccion-perfil-usuario .perfil-usuario-bio {
     display: flex;
     flex-wrap: wrap;
