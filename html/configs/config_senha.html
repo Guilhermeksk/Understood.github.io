@@ -16,9 +16,9 @@
 
     <header>
 
-        <a href="#" class="logo"><span>DevLitz</span></a>
+        <a href="/html/home.html" class="logo"><span>DevLitz</span></a>
   
-        <inpu type="checkbox" id="menu-bar">
+        <input type="checkbox" id="menu-bar">
         <label tfor="menu-bar" class="fas fa-bars"></label>
      
    
@@ -44,18 +44,28 @@
             </div>
           
             <div class="btn">
-                <button class="iniciar">Geral</button>
-                <button class="iniciar">Mudar senha</button>
-                <button class="iniciar">Começar</button>
-                <button class="iniciar">Começar</button>
-                <button class="iniciar">Começar</button>
-                <button class="iniciar">Começar</button>
+                <a href="/html/config.html"> <button id="btn-div" class="info">inf do usuário</button></a>
+                <button class="senha">Mudar senha</button>
+                <button class="historico">historico</button>
+                <a href="/html/configs/config_conta.html"><button class="desativar">Desativar conta</button></a>
+                
               </div>
 
             <div class="config-geral">
-                <ul class="lista-datos">
-                    <li><i class="icono fas fa-user-check"></i>Guilherme_Pizzorno</li>
-                    <li><i class="icono fas fa-share-alt"></i>pizzorno1223@gmail.com</li>
+                <div>
+                    <h4>Senha atual</h4>
+                    <input type="password" id="senha_atual"/>
+                    <br>
+                <h4>Senha nova</h4>
+                    <input type="password" id="senha_nova" />
+                    <br>
+                    <h4>confirme a nova senha</h4>
+                    <input type="password" id="senha_repetição"/>
+                    <br>
+                    <br>
+                    <input type="submit" required value="Definir"/>
+
+                  </div>
                 </ul>
             </div>
            

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configurações</title>
+    <title>Desativar conta</title>
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="/css/config.css" />
   <link rel="icon" type="image/png" sizes="512x512" href="/img/index-img/foguete.png">
@@ -18,7 +18,7 @@
 
         <a href="/html/home.html" class="logo"><span>DevLitz</span></a>
   
-       
+        <input type="checkbox" id="menu-bar">
         <label tfor="menu-bar" class="fas fa-bars"></label>
      
    
@@ -44,21 +44,23 @@
             </div>
           
             <div class="btn">
-             <button id="btn-div" class="info">inf do usuário</button>
+            <a href="/html/config.html"><button id="btn-div" class="info">inf do usuário</button> </a>
             <a href="/html/configs/config_senha.html"> <button class="senha">Mudar senha</button></a>
                 <button class="historico">historico</button>
-                <a href="/html/configs/config_conta.html"><button class="desativar">Desativar conta</button></a>
+                <button class="desativar">Desativar conta</button>
                 
               </div>
 
             <div class="config-geral">
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-user-check"></i>Nome de Usuário</li>
-                    <p>Guilherme_Pizzorno</p> 
-                    <li><i class="icono fas fa-user-check"></i>Email</li>
-                    <p>pizzorno1223@gmail.com</p>
-                    
+                <h4>Deseja mesmo desativar sua conta?</h4>
+                <p>Ao fazer isso vc perderar todos os dados adquiridos ao longo do tempo no Understood</p>
+          
+          <br>
+                <p2>caso sua conta tenha sido excluida acidentalmente ou por engano, voce tem 30 para contar-nós para que possa restaurá-la </p2>
+                <input type="submit" required value="Desativar"/>
                 </ul>
+                
             </div>
            
         </div>
@@ -67,7 +69,9 @@
     </section>
 
 <!--====  End of tarjeta  ====-->
-<style> p{color: rgb(117, 116, 116)} </style>
+<style> p{color: rgb(117, 116, 116)} 
+        p2{color: rgb(197, 66, 66)}
+</style>
 </body>
 
 </html>

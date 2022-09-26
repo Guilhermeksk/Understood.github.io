@@ -2,17 +2,67 @@
 body {
     color: #404040;
     font-family: "Arial", Helvetica,'Poppins';
-src:  url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
-
 }
+
+
+
+
 /* botoes de configurações desculpa sou ruim e css entao porfavor dps arruma */
-.iniciar {
+.info {
+    width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background: #f2f0f0;
+  margin-right: 80%;
+  font-size: 1.3em;
+  margin: 5px;
+  font-weight: 600;
+  color: #3902ff;
+  transition: 0.5s;
+
+    
+}
+.senha {
+    width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background: #f2f0f0;
+  margin-right: 80%;
+  font-size: 1.3em;
+  margin: 5px;
+  font-weight: 600;
+  color: #3902ff;
+  transition: 0.5s;
+
+    
+}
+.historico {
     width: 100px;
   height: 40px;
   cursor: pointer;
   border: none;
   border-radius: 15px;
-  background: #c7c6c6;
+  background: #f2f0f0;
+  margin-right: 80%;
+  font-size: 1.3em;
+  margin: 5px;
+  font-weight: 600;
+  color: #3902ff;
+  transition: 0.5s;
+
+    
+}
+.desativar {
+width: 200px;
+  height:40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background: #f2f0f0;
   margin-right: 80%;
   font-size: 1.3em;
   margin: 5px;
