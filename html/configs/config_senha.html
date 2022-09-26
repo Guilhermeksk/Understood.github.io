@@ -13,17 +13,14 @@
 </head>
 
 <body>
+<script src="/javascript/configuracao.js"></script>
+   
 
-    <header>
-
+<header>
         <a href="/html/home.html" class="logo"><span>DevLitz</span></a>
-  
         <input type="checkbox" id="menu-bar">
         <label tfor="menu-bar" class="fas fa-bars"></label>
-     
-   
-  
-      </header>
+</header>
       
     <section class="seccion-perfil-usuario">
         <div class="perfil-usuario-header">
@@ -53,18 +50,12 @@
 
             <div class="config-geral">
                 <div>
-                    <h4>Senha atual</h4>
-                    <input type="password" id="senha_atual"/>
-                    <br>
-                <h4>Senha nova</h4>
-                    <input type="password" id="senha_nova" />
-                    <br>
-                    <h4>confirme a nova senha</h4>
-                    <input type="password" id="senha_repetição"/>
-                    <br>
-                    <br>
-                    <input type="submit" required value="Definir"/>
-
+                    <form name="formuser" action="#" method="POST">
+                        Senha:<input type="password" name="senha" ><br><br>
+                        Repetir Senha:<input type="password" name="rep_senha" ><br><br>
+                        
+                        <input type="submit" onclick="return validar()">
+                    </form>
                   </div>
                 </ul>
             </div>
